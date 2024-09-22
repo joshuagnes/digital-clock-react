@@ -1,0 +1,33 @@
+body {
+  background-image: url(assets/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+
+  /* For the clock's location */
+  display: flex;
+  justify-content: center;
+  /* vh - viewport height */
+  min-height: 100vh; 
+  align-items: center;
+}
+
+.clock-container {
+  /* for the background of the clock container I'd like it looks like we are looking through glass, I am using blur() the greater the number the greater the blur */
+  backdrop-filter: blur(3px);
+  /* vw - viewport width, this makes the clock container takes up 100% of the width*/
+  width: 100vw;
+  padding: 10px 0;
+  
+}
+
+.clock {
+  color: white;
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: monospace;
+  text-shadow: 3px 3px 5px hsl(0, 0%, 0% 0.75);
+  text-align: center;
+}
